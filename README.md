@@ -1,3 +1,3 @@
-Git page link:
+Netlify link:
 
- https://raghulashok16.github.io/tailwind-projects/
+https://delter-tailwind-projects.netlify.app/
