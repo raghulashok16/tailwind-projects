@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config={
+            theme:{
+                fontFamily:{
+                    roboto: ['Roboto'],
+                    merri: ['Merriweather'],
+                    inter: ['Inter']
+                },
+                fontSize:{
+                    s:'0.4rem',
+                    ss:'0.6rem',
+                    sss:'0.5rem'
+                }
+            }
+        }
+    </script>
+    <title>Project 2</title>
+</head>
+<body class="bg-[#dfdfdf]">
+    <!-- card container -->
+    <div class="flex justify-center items-center h-screen">
+    <div class="flex flex-row w-[36%] h-[30%] bg-[#fffaf2] rounded-xl shadow-xl p-5">
+        <div class="flex flex-col w-[55%]">
+            <img src="https://images.pexels.com/photos/19467713/pexels-photo-19467713/free-photo-of-portrait-of-woman-in-coat-and-scarf.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load  " alt="" class="w-12 h-14 rounded-full shadow-xl border">
+            <h3 class="font-inter text-ss font-extrabold">MetaMask</h3>
+            <p class="font-inter text-s font-bold mt-1">@metaMask</p>
+            <p class="font-inter text-sss mt-2 tracking-wider">MetaMask brings Etherium to<br> your web browser</p>
+            <div class="flex flex-row mt-1">
+                <button class= " hover:outline-1 bg-white rounded-lg p-2 border border-gray-200 mr-1"><img class="w-5" src="../assets/project5/github-svgrepo-com.svg" alt=""></button>
+                <button class= " bg-white rounded-lg p-2 border border-gray-200 mr-1"><img class="w-5" src="../assets/project5/linkedin-svgrepo-com.svg" alt=""></button>
+                <button class= " bg-white rounded-lg p-2 border border-gray-200 mr-1"><img class="w-5" src="../assets/project5/shopify-svgrepo-com.svg" alt=""></button>
+                <button class= " bg-white rounded-lg p-2 border border-gray-200 mr-1"><img class="w-5" src="../assets/project5/ampproject-svgrepo-com.svg" alt=""></button>
+            </div>
+        </div>
+        <div class="flex flex-col justify-between w-[45%]">
+            <div>
+                <div class="flex justify-between">
+                    <p class="font-inter text-sss mt-2 inline">6/8 Organizations</p>
+                    <img src="../assets/project5/information-circle-svgrepo-com.svg" class="w-4 mt-1.5 inline" alt="">
+                </div>
+                <div class=" bg-gray-200 rounded-full h-1 mt-1 w-[100%]">
+                    <div class="bg-orange-400 h-1 rounded-full" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="ms-auto">
+                <p class="text-sm "><span class="font-inter font-extrabold text-sm">4K</span>Followers</p>
+                <button class="p-2 bg-[#13143b] rounded-lg w-full hover:bg-blue-50 hover:text-black outline hover:outline-1 text-white text-ss">Follow</button>
+            </div>
+        </div>
+    </div>
+    </div>
+   
+</body>
+</html>
