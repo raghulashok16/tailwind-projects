@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config={
+            theme:{
+                fontFamily:{
+                    roboto: ['Roboto'],
+                    merri: ['Merriweather']
+                }
+            }
+        }
+    </script>
+    <title>Project 2</title>
+</head>
+<body class="bg-violet-50">
+    <!-- body container -->
+    <div class="flex flex-col justify-center items-center h-screen relative">
+        <div class="w-72 h-40 bg-[#d1d0f5] rounded-2xl"></div>
+         <div class="w-72 h-40 bg-white rounded-2xl shadow-xl absolute top-64 right-[38%] flex flex-col justify-center pl-7 p-5">
+            <h3 class="font-bold text-sm font-merri ">Your progress</h3>
+            <div class="flex flex-row mt-4 gap-x-2 items-center">
+                <div class="bg-white rounded-full text-sm pt-3 ps-2 w-12 h-12  border-4 border-violet-200 font-roboto font-extrabold">93%</div>
+                <div class=" flex flex-col gap-y-1">
+                    <h3 class=" font-bold font-roboto text-xs">32 of 42 complete</h3>
+                    <p class="font-roboto text-xs text-gray-500">Finish course to get certificate.</p>
+                </div>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
