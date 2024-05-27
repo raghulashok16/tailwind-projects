@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    roboto: ['Roboto'],
+                    merri: ['Merriweather'],
+                    inter: ['Inter']
+                },
+                fontSize: {
+                    s: '0.4rem',
+                    ss: '0.5rem',
+                    sss: '0.6rem',
+                    ssss: '0.7rem'
+                }
+            }
+        }
+    </script>
+    <title>Project 7</title>
+</head>
+
+<body class="bg-[#f1f1f1]">
+    <!-- feedback card container -->
+    <div class="flex justify-center items-center h-screen">
+        <div class="w-65 h-105 bg-white shadow-xl">
+            <div class="my-10 px-10">
+                <p class="font-merri font-extrabold mb-2">Give feedback</p>
+                <p class="text-ssss font-medium">Your thought arevaluable in helping <br>improve our products.</p>
+                <fieldset class="p-10 border border-gray-200 my-3 rounded-sm">
+                    <p class="text-ssss text-gray-400">Let us know what's on your mind</p>
+                </fieldset>
+                <div class="flex items-center mb-4">
+                    <input id="contact-checkbox" type="checkbox" value="" class="w-4 h-4 border-gray-300 rounded ">
+                    <label for="contact-checkbox" class="ms-2 text-ssss font-light">I
+                        may be contacted about this feedback. See <br> our <span class="underline">privacy
+                            policy</span></label>
+                </div>
+
+                <button
+                    class="text-ss font-semibold border border-black py-2 bg-black w-full text-white rounded-xs hover:text-black hover:bg-white">Send
+                    Feedback</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
