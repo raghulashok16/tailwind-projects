@@ -31,29 +31,38 @@
             }
         }
     </script>
-    <title>Project 7</title>
+    <title>subscribe card</title>
 </head>
 
-<body class="bg-[#f1f1f1]">
-    <!-- feedback card container -->
-    <div class="flex justify-center items-center h-screen">
-        <div class="w-65 h-105 bg-white shadow-xl">
-            <div class="my-10 px-10">
-                <p class="font-merri font-extrabold mb-2">Give feedback</p>
-                <p class="text-ssss font-medium">Your thought arevaluable in helping <br>improve our products.</p>
-                <fieldset class="p-10 border border-gray-200 my-3 rounded-sm">
-                    <p class="text-ssss text-gray-400">Let us know what's on your mind</p>
-                </fieldset>
-                <div class="flex items-center mb-4">
-                    <input id="contact-checkbox" type="checkbox" value="" class="w-4 h-4 border-gray-300 rounded ">
-                    <label for="contact-checkbox" class="ms-2 text-ssss font-light">I
-                        may be contacted about this feedback. See <br> our <span class="underline">privacy
-                            policy</span></label>
-                </div>
+<body>
+    <!-- background container -->
+    <div class="flex items-center justify-center h-screen bg-zinc-700">
+        <!-- Card -->
+        <div class="bg-zinc-800 p-2 mx-6 rounded-2xl">
+            <!-- Flex Container -->
+            <div class="flex flex-col md:flex-row rounded-l-xl">
+                <!-- image -->
+                <img src="https://i.ibb.co/t4hHv9S/technology-trend-freepik-1647963838.jpg"
+                    class="object-fit rounded-xl h-80 md:h-64
+                    md:transfo md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-200" alt="">
+                <!-- content -->
+                <div class="p-6 md:p-12 ">
+                    <h2 class="font-inter text-xl font-medium text-center text-white md:text-left">
+                        Get your latest tech news in our channel.
+                    </h2>
+                    <p class="max-w-xs my-4 text-ssss leading-5 tracking-wide text-center text-white md:text-left">
+                        Get more from TechCrunch. Select your topics of interest; you can unsubscribe at any time.
+                    </p>
+                    <div class="flex flex-col mt-5 space-y-4 md:space-x-3 md:space-y-0 md:flex-row">
+                        <input type="text" placeholder="Enter your email address"
+                            class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-ssss placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none" />
+                        <button
+                            class="px-5 py-3 text-xs rounded-md text-zinc-800 bg-lime-500 hover:bg-lime-700 hover:text-white duration-500">
+                            Subscribe
+                        </button>
 
-                <button
-                    class="text-ss font-semibold border border-black py-2 bg-black w-full text-white rounded-xs hover:text-black hover:bg-white">Send
-                    Feedback</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
